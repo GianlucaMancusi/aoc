@@ -15,7 +15,6 @@ def func1(data):
 def func2(data):
     mapping = {'one':'1', 'two':'2', 'three':'3', 'four':'4', 'five':'5', 'six':'6', 'seven':'7', 'eight':'8', 'nine':'9'}
     for j, d in enumerate(data):
-        # replace all words with numbers in the string finding the word in data
         indexes = [(i, i + len(word)) for i in range(len(d)) for word in mapping if d.startswith(word, i)]
         new_d = ''
         prev_end = 0
