@@ -1,0 +1,6 @@
+.vscode
+secret_session_cookie
+.mypy_cache
+*.pyc
+*.py[cod]
+__pycache__/
