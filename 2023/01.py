@@ -33,5 +33,3 @@ if __name__ == '__main__':
 
     advent.print_answer(1, func1(lines))
     advent.print_answer(2, func2(lines))
-    # advent.submit_answer(1, func1(lines))
-    advent.submit_answer(2, func2(lines))
