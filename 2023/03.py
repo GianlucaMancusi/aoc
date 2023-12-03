@@ -94,7 +94,6 @@ def func2(data):
                 is_symb = False
                 current_gears = set()
 
-    # gears must be 2, print the sum of the numbers in the gear
     valid_gears = []
     for gear, numbers in gears.items():
         if len(numbers) == 2:
@@ -107,7 +106,5 @@ if __name__ == '__main__':
     with advent.get_input() as f:
         lines = f.readlines()
 
-    # advent.print_answer(1, func1(lines))
+    advent.print_answer(1, func1(lines))
     advent.print_answer(2, func2(lines))
-    # advent.submit_answer(1, func1(lines))
-    advent.submit_answer(2, func2(lines))
