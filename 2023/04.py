@@ -13,13 +13,7 @@ def parse(line):
     having = numbers.split('|')[1]
     winning_list = re.findall(r'\d+', winning)
     having_list = re.findall(r'\d+', having)
-
     return card.split(' ')[-1], winning_list, having_list
-
-
-def compute(winning, having):
-    score = sum(h in winning for h in having)
-    return 2**(score - 1) if score > 0 else 0
 
 
 def func1(data):
